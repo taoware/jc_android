@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e1e1"
+    android:orientation="vertical" >
+<!--    com.gxcm.jycs.chatui.widget.xlistview.MyListView -->
+	<com.gxcm.jycs.chatui.widget.xlistview.MyListView
+	    android:id="@+id/lv_news"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@drawable/line_divider"
+	    ></com.gxcm.jycs.chatui.widget.xlistview.MyListView>
+</LinearLayout>

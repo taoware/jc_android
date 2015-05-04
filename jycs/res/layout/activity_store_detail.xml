@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_title" >
+
+        <FrameLayout
+            android:id="@+id/fm_back_title"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/img_back_title"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/back_title" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="门店展示"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:background="#fbfafa" >
+
+        <LinearLayout
+            android:id="@+id/ll_store_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sotre_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="上海教育超市门店"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_store_descri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="坚持科学发展  坚持姓教特色"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:id="@+id/img_store_detail"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_store_detail" />
+
+            <RelativeLayout
+                android:id="@+id/rl_shadow_below_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rl_shadow_below_img" >
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="地址/上海"
+                    android:textColor="#006b43"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="联系方式:021-88888888"
+                    android:textColor="#006b43"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_compony_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/img_company_logo"
+                android:text="公司简介"
+                android:textColor="#006b43"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_compony_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="        上海教育超市成立于1999年7月29日，系根据上海市委市府及市教委关于推进高校后勤社会化改革的指示精神由上海高校后勤服务股份有限公司出资控股，复旦、交大同济、财大等高校后勤实体参股共同出资组建。上海教育超市是全国第一家立足教育市场、面向医疗机构、机关团体等企事业单位的商业连锁企业，始终以办出规模、办出特色、办出效益为目标，以低成本运作为经营指导思想是上海高校后勤社会化改革的一项标志性工程。"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_all_page"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_title" >
+
+        <FrameLayout
+            android:id="@+id/fm_back_title"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <Button
+                android:id="@+id/img_back_title"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/back_title" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="门店展示"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fm_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <com.gxcm.jycs.chatui.widget.ChildViewPager
+            android:id="@+id/vp_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            >
+        </com.gxcm.jycs.chatui.widget.ChildViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/vp_store_bottom" >
+
+            <ImageView
+                android:id="@+id/img_ponit_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/img_point_select" />
+
+            <ImageView
+                android:id="@+id/img_ponit_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_ponit_01"
+                android:src="@drawable/mg_select_unselect" />
+
+            <ImageView
+                android:id="@+id/img_ponit_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_ponit_02"
+                android:src="@drawable/mg_select_unselect" />
+
+            <ImageView
+                android:id="@+id/img_ponit_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_ponit_03"
+                android:src="@drawable/mg_select_unselect" />
+
+            <ImageView
+                android:id="@+id/img_ponit_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_ponit_04"
+                android:src="@drawable/mg_select_unselect" />
+
+            <ImageView
+                android:id="@+id/img_ponit_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/img_ponit_05"
+                android:src="@drawable/mg_select_unselect" />
+
+            <TextView
+                android:id="@+id/tv_store_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="上海教育超市门店学生信得过的门店"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </FrameLayout>
+	<ListView 
+	    android:id="@+id/lv_store"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:fastScrollEnabled="true"
+	    android:layout_marginTop="10dp"
+	    android:divider="@drawable/divider_line_back"
+	    ></ListView>
+   
+
+</LinearLayout>

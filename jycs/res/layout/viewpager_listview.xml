@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <FrameLayout 
+        android:id="@+id/news_fram"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+    <com.gxcm.jycs.chatui.widget.ChildViewPager 
+        android:id="@+id/news_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/information_viewpagerdemo1"
+        ></com.gxcm.jycs.chatui.widget.ChildViewPager>
+        <TextView 
+            android:id="@+id/tv_news"
+            android:layout_gravity="bottom"
+            android:text="中国后勤商贸协会会议"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="@android:color/white"
+            android:background="@drawable/shadow_information"
+            />
+    </FrameLayout>
+
+</RelativeLayout>
